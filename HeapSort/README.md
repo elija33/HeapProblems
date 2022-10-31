@@ -44,3 +44,31 @@ left use => 2 * 4 + 1 = 9 ==> 15
                         4     6   13   10      4    17  13  10   9   15   5   10            9      6   5   10
                       /  \   /  \            /  \   / \        /  \  / \                  /  \    /  \ 
                     9    8  15  17          9    8 15  6      4    8 3  6                4   8   3    1
+
+                                                
+
+                                                
+                                                Implementation of Heap Sort
+Build complete Binary Tree  
+Make it a max heap  
+    - The big element will be at the top root of the tree and the small element will be the node. {4,10,3,5,1}.
+                                
+                                Example of Max Heap
+                                         4                          10
+                                     /      \                    /      \
+                                   10        3       ===>       5         3            
+                                /     \                      /     \
+                              5         1                   4       1
+
+Make it a min heap
+    - The smallest element will be at the top of the root, and the biggest elememt will be the node. {4,10,3,5,1}.
+
+                                    Example of Min Heap
+                                            4                  1
+                                        /     \   ==>        /    \
+                                      10       3           4        3
+                                   /     \               /   \
+                                 5         1            5      10
+
+Sort the array
+Heapify the elements in the array
