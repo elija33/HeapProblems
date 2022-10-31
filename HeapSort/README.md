@@ -47,28 +47,23 @@ left use => 2 * 4 + 1 = 9 ==> 15
 
                                                 
 
-                                                
+
                                                 Implementation of Heap Sort
 Build complete Binary Tree  
 Make it a max heap  
     - The big element will be at the top root of the tree and the small element will be the node. {4,10,3,5,1}.
                                 
-                                Example of Max Heap
-                                         4                          10
-                                     /      \                    /      \
-                                   10        3       ===>       5         3            
-                                /     \                      /     \
-                              5         1                   4       1
+                                                        Example of Max Heap
 
-Make it a min heap
-    - The smallest element will be at the top of the root, and the biggest elememt will be the node. {4,10,3,5,1}.
+            4            10  swap(10 & 1)   1  swap(5,1)  5 remove(5)   1 swap(4, 1)  4 remove(4)   1 swap(3,1)   3 remove(3)  1
+          /   \         /  \    ==>       /   \ ==>     /  \  ==>     /  \ ==>       /  \   ==>      \    ==>      \
+        10     3  ==>  5    3            5     3       4    3        4    3         1    3            3             1
+      /   \          /   \              /             /   
+    5      1        4     1            4             1
 
-                                    Example of Min Heap
-                                            4                  1
-                                        /     \   ==>        /    \
-                                      10       3           4        3
-                                   /     \               /   \
-                                 5         1            5      10
-
+            [1,3,4,5,10]            
 Sort the array
+    - Start removing the element in the tree to an array.
+    - Remove the root first, by swaping the last element and the root.
+    
 Heapify the elements in the array

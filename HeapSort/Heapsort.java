@@ -1,12 +1,14 @@
 package HeapSort;
 
 public class Heapsort {
+    // Building Heap
     public void buildheap(int number[], int n) {
         for (int i = number.length / 2 - 1; i >= 0; i--) {
             heapify(number, n, i);
         }
     }
 
+    // Sort the heap by array
     public void sort(int number[]) {
         buildheap(number, 0);
 
