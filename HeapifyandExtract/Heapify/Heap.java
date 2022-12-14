@@ -46,11 +46,9 @@ public class Heap {
             int smallnumber = i;
             // checking if both right and left side of the heap exist
             if (leftside < size && arr[leftside] < arr[i])
-                ;
-            smallnumber = leftside;
-            if (rightside < size && arr[rightside] < arr[i])
-                ;
-            smallnumber = rightside;
+                smallnumber = leftside;
+            if (rightside < size && arr[rightside] < arr[smallnumber])
+                smallnumber = rightside;
             if (smallnumber != i) {
                 int temp = arr[i];
                 arr[i] = arr[smallnumber];
